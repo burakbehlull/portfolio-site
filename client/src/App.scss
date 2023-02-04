@@ -1,0 +1,29 @@
+html{
+    padding: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+.App{
+    height: 100%;
+    header{
+        nav{
+            @import 'components/Nav/Nav.scss';
+        }
+    }
+    main{
+        section{
+            height: calc(95vh);
+            width: 100%;
+            background-color: red;
+        }
+    }
+
+}
+
