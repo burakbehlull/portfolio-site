@@ -1,12 +1,24 @@
 {
-  "name": "server",
+  "name": "portfolio-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "31000s portfolio site server side",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/31000s/portfolio-site.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "bugs": {
+    "url": "https://github.com/31000s/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/31000s/portfolio-site/#readme",
+  "author": "31000s <burakyabgu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  }
 }
