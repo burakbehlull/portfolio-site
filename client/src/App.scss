@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 html{
     padding: 1.5rem;
+    font-family: 'Inter', sans-serif;
 }
 
 * {
@@ -21,7 +24,8 @@ html{
         section{
             height: calc(95vh);
             width: 100%;
-            background-color: red;
+
+            @import './components/Header/Header.scss';
         }
     }
 

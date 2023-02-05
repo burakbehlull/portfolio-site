@@ -1,7 +1,18 @@
 ul{
+    padding-top: 0.7rem;
     display: flex;
-    gap: 0.3rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
     li{
         list-style-type: none;
+        font-weight: 500;
+        
+        font-size: 0.9rem;
+        a{
+            text-decoration: none;
+            color: black;
+
+        }
     }
 }
