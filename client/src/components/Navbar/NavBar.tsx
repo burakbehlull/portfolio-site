@@ -1,7 +1,8 @@
-const Nav: React.FC = ()=>{
+import React from 'react';
+
+const Navbar: React.FC = ()=>{
     return(
         <nav>
-
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="#">Services</a></li>
@@ -11,4 +12,4 @@ const Nav: React.FC = ()=>{
     )
 }
 
-export default Nav
+export default React.memo(Navbar)

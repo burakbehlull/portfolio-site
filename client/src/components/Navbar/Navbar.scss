@@ -1,0 +1,30 @@
+nav{
+    
+    ul{
+        height: 100%;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        li{
+            list-style-type: none;
+            background-color: transparent;
+            
+            a{
+                font-weight: 500;
+                font-size: 1.0rem;
+                display: block;
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                -webkit-transition: all 1200ms ease;
+                -o-transition-property: all;
+                &:hover{
+                    transform: translateY(-2px);
+                    color: rgb(17, 16, 16);
+                    
+                }
+            }
+            
+        }
+    }
+}

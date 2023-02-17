@@ -1,4 +1,4 @@
-import developerImg from '../../Assets/devoloperImg.avif';
+import developerImg from '../../Assets/developerImg.avif';
 const Header: React.FC = ()=> {
     return(
         <section id="header">

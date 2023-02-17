@@ -1,13 +1,13 @@
-import React from 'react';
-import Nav from './components/Nav/Nav';
+import React, { useMemo } from 'react';
 import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/NavBar';
 import './App.scss';
 import Header from './components/Header/Header';
 function App() {
   return (
     <div className='App'>
       <header>
-        <Nav />
+        <Navbar />
       </header>
 
       <main>
