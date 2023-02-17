@@ -1,15 +1,22 @@
 nav{
-    
+    height: 100%;
     ul{
         height: 100%;
         display: flex;
         gap: 1.5rem;
         align-items: center;
         justify-content: center;
+        margin-left: 7rem;
+        margin-right: 10rem;
+        margin-top: 2rem;
         li{
             list-style-type: none;
             background-color: transparent;
             
+            &:nth-child(1){
+                margin-right: auto;
+                
+            }
             a{
                 font-weight: 500;
                 font-size: 1.0rem;

@@ -6,7 +6,8 @@ font-family: 'Inter', sans-serif;
 
 html{
     padding: 1.5rem;
-    font-family: 'Nunito', sans-serif;
+	
+	font-family: 'Nunito', sans-serif;
 }
 
 * {
@@ -28,6 +29,7 @@ html{
             width: 100%;
 
             @import './components/Header/Header.scss';
+            @import './components/About/About.scss';
         }
     }
 
