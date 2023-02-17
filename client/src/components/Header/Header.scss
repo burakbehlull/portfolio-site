@@ -11,16 +11,45 @@
                 font-weight: 600;
                 font-size: 4rem;
                 letter-spacing: -3px;
-                line-height: 75px;
+                line-height: 50px;
                 
                 color: #131212;
+                span{
+                    font-size: 2.3rem;
+                    color: #D8D7E0;
+                }
             }
             p{
-                padding-top: 0.8rem;
+                padding-top: 3rem;
                 font-weight: 400;
                 font-size: 1.5rem;
                 color: rgb(94, 91, 91)
             }
+
+            ul{
+                li{
+                    list-style-type: none;
+                    padding-top: 2.5rem;
+                    a{
+                        
+                        font-size: 0.9rem;
+                        padding: 0.6rem;
+                        padding-right: 1rem;
+                        padding-left: 1rem;
+                        border-radius: 6px;
+                        color: #f1ecec;
+                        background-color: #6C55E0;
+                        text-decoration: none;
+                        cursor: pointer;
+                        
+                        &:hover{
+                            box-shadow: 0 5px 35px 0px rgb(0 0 0 / 10%);
+                            background-color: #715bdf;
+                        }
+                    }
+                }
+            }
+
         }
 
         img{
