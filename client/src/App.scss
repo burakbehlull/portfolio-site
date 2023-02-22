@@ -6,7 +6,6 @@ font-family: 'Inter', sans-serif;
 
 html{
     padding: 1.5rem;
-	
 	font-family: 'Nunito', sans-serif;
 }
 
@@ -15,7 +14,6 @@ html{
     padding: 0;
     border: none;
     box-sizing: border-box;
-
 }
 
 .App{
@@ -25,11 +23,12 @@ html{
     }
     main{
         section{
-            height: calc(95vh);
+            height: calc(90vh);
             width: 100%;
 
             @import './components/Header/Header.scss';
             @import './components/About/About.scss';
+            @import './components/Skills/Skills.scss';
         }
     }
 

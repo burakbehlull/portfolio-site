@@ -1,8 +1,7 @@
-import React, { useMemo } from 'react';
-import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/NavBar';
 import Header from './components/Header/Header';
 import About from './components/About/About';
+import Skills from './components/Skills/Skills';
 import './App.scss';
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <main>
         <Header />
         <About />
-
+        <Skills />
       </main>
     </div>
   );

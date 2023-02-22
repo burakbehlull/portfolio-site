@@ -24,13 +24,14 @@
             width: 35%;
             height: 60%;
             border-radius: 5%;
+            box-shadow: 0 4px 10px 0px rgb(0 0 0 / 20%);
         }
         .about-text{
             margin-left: 8%;
-            text-align: center;
-            padding-top: 8%;
+            text-align: start;
+            padding-top: 1%;
             font-size: 1.3rem;
-            color: #9e9e9e;
+            color: #111111;
             p{
                 font-weight: 500;
             }
