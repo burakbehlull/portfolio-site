@@ -1,7 +1,5 @@
 import React from 'react';
 
-import nodejsIcon from '../../Assets/nodejs-icon.png';
-
 const Skills: React.FC = ()=>{
     return(
         <section id='skills'>
