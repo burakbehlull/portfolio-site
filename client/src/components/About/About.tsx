@@ -1,6 +1,10 @@
 import React from 'react';
 import myPhoto from '../../Assets/me.png';
 
+import jsCertificate from '../../Assets/certificates/js-certificates.png';
+import nodejsCertificate from '../../Assets/certificates/nodejs-certificates.png';
+import reactCertificate from '../../Assets/certificates/react-certificates.png';
+
 const About: React.FC = ()=>{
 
     return (
@@ -16,6 +20,18 @@ const About: React.FC = ()=>{
                         <br/>I am interested in the web domain.<br/>I use Backend and Frontend technologies.</p>
                 </div>
             </div>
+
+            
+            <div className='certificates-box'>
+                <h1>Sertifikalar</h1> 
+                <div className='certificates'>
+                <img src={jsCertificate} alt="Javascript Certificate" />
+                <img src={nodejsCertificate} alt="Nodejs Certificate" />
+                <img src={reactCertificate} alt="React Certificate" />
+                </div>
+            </div>
+
+            
         </section>
     )
 }

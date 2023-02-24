@@ -1,6 +1,8 @@
 import React from 'react';
 import developerImg from '../../Assets/developerImg.avif'; 
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../Variants';
 
 const Header: React.FC = ()=> {
 
@@ -8,7 +10,13 @@ const Header: React.FC = ()=> {
         <section id="header">
             <div className="header-box">
                 <div className='header-text'>
-                    <h1>Hi, I am Burak<br /><span>I'm </span><TypeAnimation sequence={[
+
+                    <motion.h1
+                    variants={fadeIn('up', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.7}}             
+                    >Hi, I am Burak<br /><span>I'm </span><TypeAnimation sequence={[
                     'Fullstack Web Developer',
                     2000,
                     'Designer',
@@ -18,13 +26,31 @@ const Header: React.FC = ()=> {
                     speed={50}
                     wrapper='span'
                     repeat={Infinity}
-                    /></h1>
-                    <p>I am interested in the field of web development and<br/>I am a Designer as well as a blogger.</p>
-                    <ul>
+                    /></motion.h1>
+                    <motion.p
+                    variants={fadeIn('up', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.7}}             
+                    >I am interested in the field of web development and<br/>I am a Designer as well as a blogger.</motion.p>
+                    
+                    <motion.ul
+                    variants={fadeIn('up', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.7}}
+                    >
                         <li><a href="#about">Contact Me</a></li>
-                    </ul>
+                    </motion.ul>
                 </div>
-                <img src={developerImg} alt="header page developer image" />
+                <motion.img
+                variants={fadeIn('up', 0.3)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once: false, amount: 0.7}}   
+    
+                src={developerImg}
+                alt="header page developer image" />
             </div>
         </section>
     )

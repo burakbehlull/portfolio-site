@@ -15,19 +15,20 @@
         }
     }
     .about-space{
-        margin-top: 7%;
+        margin-top: 2%;
         display: flex;
-        width: 900px;
-        height: 500px;
+        justify-content: center;
+        width: 100%;
+        // height: auto;
         
         img{
-            width: 35%;
+            width: 23%;
             height: 60%;
             border-radius: 5%;
             box-shadow: 0 4px 10px 0px rgb(0 0 0 / 20%);
         }
         .about-text{
-            margin-left: 8%;
+            margin-left: 6%;
             text-align: start;
             padding-top: 1%;
             font-size: 1.3rem;
@@ -35,7 +36,32 @@
             p{
                 font-weight: 500;
             }
-        }
-        
+        }        
     }
+
+    .certificates-box{
+        padding-top: 2%;
+        h1{
+            text-align: center;
+            font-size: 2em;
+            
+        }
+        .certificates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1%;
+            gap: 1%;
+            
+            img{
+                width: 25%;
+                border-radius: 15px;
+                border: 2px solid #d3cccc;
+                box-shadow: 0 4px 10px 0px rgb(0 0 0 / 15%);
+            }
+            
+        }
+    }
+
+
 }
