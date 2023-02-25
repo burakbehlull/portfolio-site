@@ -40,7 +40,7 @@ const Header: React.FC = ()=> {
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.7}}
                     >
-                        <li><a href="#about">Contact Me</a></li>
+                        <li><a href="#about">About Me</a></li>
                     </motion.ul>
                 </div>
                 <motion.img

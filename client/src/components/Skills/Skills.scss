@@ -1,8 +1,9 @@
 &#skills{
+    height: calc(85vh);
     display: grid;
     justify-content: center;
     align-items: center;
-
+    
     .skills-header{
         padding-top: 15%;
         h1{
@@ -16,6 +17,6 @@
             font-weight: 400;
         }
     }
-    .skills-space{
-    }
+
 }
+

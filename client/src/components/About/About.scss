@@ -1,7 +1,5 @@
 &#about{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    height: calc(70vh);
     .about-header{
         h1{
             text-align: center;
@@ -15,13 +13,11 @@
         }
     }
     .about-space{
-        margin-top: 2%;
+        margin-top: 5%;
         display: flex;
         justify-content: center;
-        width: 100%;
-        // height: auto;
-        
-        img{
+            
+        .photo{
             width: 23%;
             height: 60%;
             border-radius: 5%;
@@ -36,32 +32,30 @@
             p{
                 font-weight: 500;
             }
+    
+            ul{
+                li{
+                    list-style-type: none;
+                    padding-top: 2.5rem;
+                    a{
+                            
+                        font-size: 0.9rem;
+                        padding: 0.6rem;
+                        padding-right: 1rem;
+                        padding-left: 1rem;
+                        border-radius: 6px;
+                        color: #f1ecec;
+                        background-color: #6C55E0;
+                        text-decoration: none;
+                        cursor: pointer;
+                            
+                        &:hover{
+                            box-shadow: 0 5px 35px 0px rgb(0 0 0 / 10%);
+                            background-color: #715bdf;
+                        }
+                    }
+                }
+            }
         }        
     }
-
-    .certificates-box{
-        padding-top: 2%;
-        h1{
-            text-align: center;
-            font-size: 2em;
-            
-        }
-        .certificates{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 1%;
-            gap: 1%;
-            
-            img{
-                width: 25%;
-                border-radius: 15px;
-                border: 2px solid #d3cccc;
-                box-shadow: 0 4px 10px 0px rgb(0 0 0 / 15%);
-            }
-            
-        }
-    }
-
-
 }

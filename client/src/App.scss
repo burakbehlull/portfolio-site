@@ -23,13 +23,12 @@ html{
     }
     main{
         section{
-            height: calc(100vh);
             width: 100%;
-
             @import './components/Header/Header.scss';
             @import './components/About/About.scss';
             @import './components/Skills/Skills.scss';
         }
+        
     }
 
 }
