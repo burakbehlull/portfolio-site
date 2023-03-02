@@ -9,7 +9,7 @@ const Skills: React.FC = ()=>{
             </div>
 
             <div className='skills-space'>
-
+                <h1>SKİLLS</h1>
             </div>
         </section>
     )
