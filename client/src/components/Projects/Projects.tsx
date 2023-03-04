@@ -1,8 +1,12 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../Variants';
+
 import spotifyProductDesign from '../../Assets/sites/spd-desktop.png';
 import mernTodoApp from '../../Assets/sites/mern-todo-app.png';
 import github from '../../Assets/icons/github.svg';
 import openLink from '../../Assets/icons/open-link.svg';
+
 
 
 const Projects: React.FC = ()=>{
@@ -14,8 +18,11 @@ const Projects: React.FC = ()=>{
             </div>
 
             <div className='projects-space'>
-                <div className='project-left'>
-
+                <motion.div className='project-left'
+                            variants={fadeIn('right', 0.3)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{once: false, amount: 0.2}}>
                     <div className="project-box">
                             <img src={spotifyProductDesign} alt="Spotify Product Design Desktop Image" />
                     </div>
@@ -27,8 +34,12 @@ const Projects: React.FC = ()=>{
                         <a href="https://iambuvak.github.io/spotify-product-design" target='_blank'><img src={openLink} alt="Open Link" /></a>
                         </div>
                     </div>
-                </div>
-                <div className='project-right'>
+                </motion.div>
+                <motion.div className='project-right'
+                            variants={fadeIn('right', 0.3)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{once: false, amount: 0.2}}>
                     <div className="project-text">
                         <h2>Mern Todo App</h2>
                         <p>"Mern Todo App" is an application that<br /> I wrote with React TypeScript and Scss <br /> on the Frontend and Nodejs on the Backend with Mongodb.</p>
@@ -40,7 +51,7 @@ const Projects: React.FC = ()=>{
                     <div className="project-box">
                             <img src={mernTodoApp} alt="Spotify Product Design Desktop Image" />
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )
