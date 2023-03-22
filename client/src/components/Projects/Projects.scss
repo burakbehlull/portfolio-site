@@ -17,5 +17,6 @@
         padding-top: 5%;
         @include projectLeft();
         @include projectRight();
+        @include projectRight2();
     }
 }

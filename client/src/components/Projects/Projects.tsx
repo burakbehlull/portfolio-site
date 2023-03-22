@@ -4,6 +4,7 @@ import { fadeIn } from '../../Variants';
 
 import spotifyProductDesign from '../../Assets/sites/spd-desktop.png';
 import mernTodoApp from '../../Assets/sites/mern-todo-app.png';
+import leogram from '../../Assets/sites/Leogram.png';
 import github from '../../Assets/icons/github.svg';
 import openLink from '../../Assets/icons/open-link.svg';
 
@@ -18,7 +19,7 @@ const Projects: React.FC = ()=>{
             </div>
 
             <div className='projects-space'>
-                <motion.div className='project-left'
+            <motion.div className='project-left'
                             variants={fadeIn('right', 0.3)}
                             initial='hidden'
                             whileInView={'show'}
@@ -50,6 +51,24 @@ const Projects: React.FC = ()=>{
                     </div>
                     <div className="project-box">
                             <img src={mernTodoApp} alt="Spotify Product Design Desktop Image" />
+                    </div>
+                </motion.div>
+
+                <motion.div className='project-right2'
+                            variants={fadeIn('right', 0.3)}
+                            initial='hidden'
+                            whileInView={'show'}
+                            viewport={{once: false, amount: 0.2}}>
+                    <div className="project-box">
+                            <img src={leogram} alt="Leogram Desktop Image" />
+                    </div>
+                    <div className="project-text">
+                        <h2>Live Chat (Leogram)</h2>
+                        <p>It was made as an instant correspondence, <br /> application with NodeJS. <br />The design part is written in SCSS.</p>
+                        <div className="project-buttons">
+                        <a href="https://github.com/iambuvak/leogram-live-chat-with-nodejs" target='_blank'><img src={github} alt="Github Logo" /></a>
+                        <a href="#" target='_blank'><img src={openLink} alt="Open Link" /></a>
+                        </div>
                     </div>
                 </motion.div>
             </div>

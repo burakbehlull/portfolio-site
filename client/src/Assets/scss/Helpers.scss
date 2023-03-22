@@ -42,6 +42,7 @@
     }
 }
 
+
 @mixin projectRight(){
     .project-right {
         padding-top: 8%;
@@ -75,6 +76,52 @@
             .project-buttons{
                 padding-right: 85%;
                 padding-top: 15%;
+                display: flex;
+                justify-content: flex-end;
+                gap: 35px;
+                a{
+                    img{
+                        width: 1.9em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@mixin projectRight2(){
+    .project-right2 {
+        padding-top: 8%;
+        display: flex;
+        .project-box {
+            width: 45em;
+            height: 26em;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 0px clamp(50px, 9vmax, 250px) clamp(15px, 3vmax, 100px) 0px;
+                border: 5px solid rgb(173,164,226);
+                border-left: 0px;
+                object-fit: fill;
+            }
+        }
+        .project-text {
+            align-items: end;
+            text-align: end;
+            padding-top: 5%;
+            padding-left: 5%;
+            h2{
+                font-size: 2.8em;
+                color: #736be7;
+            }
+            p{
+                color: #212122;
+                font-size: 1.4em;
+            }
+            .project-buttons{
+                padding-top: 38%;
                 display: flex;
                 justify-content: flex-end;
                 gap: 35px;
