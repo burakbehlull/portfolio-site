@@ -1,5 +1,5 @@
 &#skills{
-    height: calc(85vh);
+    height: calc(100vh);
     justify-content: center;
     align-items: center;
     
@@ -17,10 +17,90 @@
         }
     }
     .skills-space{
-        .frontend-dev{
-            background-color: red;
-            padding: 10px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        gap: 10px;
+    /*
+        .languages{
+            padding-top: 40px;
+            font-size: 1.1em;
+            width: 350px;
+            height: 300px;
+            border: 1px solid #E7E7E7;
+            border-radius: 10px;
+            text-align: center;
+            img{
+                width: 20%;
+            }
         }
+    */
+
+        %boxTemplate{
+            padding-top: 40px;
+            font-size: 1.1em;
+            width: 350px;
+            height: 300px;
+            border: 1px solid #E7E7E7;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .frontend{
+
+            @extend %boxTemplate;
+            
+
+            img{
+                width: 18%;
+            }
+            .f-box{
+                display: flex;
+                padding-top: 40px;
+                padding-left: 80px;
+
+                .react{
+                    img{
+                        width: 70%;
+                     }
+                }
+                .scss{
+                    img{
+                        width: 35%;
+                    }
+                }
+                
+            }
+            
+        }
+        .backend{
+            @extend %boxTemplate;
+            
+            img{
+                width: 20%;
+            }
+
+            .b-box{
+                display: flex;
+                justify-content: center;
+                padding-top: 40px;
+                padding-right: 60px;
+                
+
+                .nodejs{
+                    img{
+                        width: 25%;
+                     }
+                }
+                .mongodb{
+                    img{
+                        width: 50%;
+                    }
+                }
+                
+            }
+            
+        }
+
     }
 
 }
