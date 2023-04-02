@@ -1,5 +1,5 @@
 &#projects{
-    height: calc(85vh);    
+    height: calc(110vh);    
     .projects-header{
         padding-top: 15%;
         h1{
@@ -19,4 +19,25 @@
         @include projectRight();
         @include projectRight2();
     }
+
+
+        //Mobile
+        @media only screen and (max-width: 480px){
+            .projects-header{
+                padding-top: 15%;
+                h1{
+                    font-size: 1.8rem;
+                }
+                h3{
+                    font-size:.8rem;
+                    text-align: center;
+                }
+            }
+            .projects-space {
+                padding-top: 5%;
+                @include projectLeft_Mobil();
+                @include projectRight_Mobil();
+                @include projectRight2_Mobil();
+            }
+        }
 }
