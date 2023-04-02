@@ -56,5 +56,45 @@
             width: 50%;
         }
     }
+
+    @media only screen and (max-width: 480px) {
+        .header-box{
+            display: grid;
+            .header-text{
+                h1{
+                    font-size: 3rem;
+                    color: #131212;
+                    span{
+                        font-size: 2.0rem;
+                    }
+                }
+                p{
+                    padding-left: 1rem;
+                    font-size: .9rem;
+                }
+        
+                ul{
+                    li{
+                        padding-top: 2.5rem;
+                        padding-left: 1rem;
+                        a{
+                                
+                            font-size: 0.9rem;
+                            padding: 0.6rem;
+                            padding-right: 1rem;
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+        
+            }
+        
+            img{
+                padding-top: 10px;
+                width: 100%;
+            }
+        }
+
+    }
 }
 

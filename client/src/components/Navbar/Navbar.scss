@@ -34,4 +34,23 @@ nav{
             
         }
     }
+
+    @media only screen and (max-width: 480px){
+        ul{
+            padding-left: 3.3em;
+            li{
+                &:nth-child(1){
+                    padding-right: 4em;
+                    
+                    
+                }
+                a{
+                    font-weight: 500;
+                    font-size: .9rem;
+                }
+                
+            }
+        }
+        
+    }
 }

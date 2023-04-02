@@ -58,4 +58,40 @@
             }
         }        
     }
+
+    @media only screen and (max-width: 480px){
+        .about-header{
+            h1{
+                text-align: center;
+                font-size: 1.8rem;
+            }
+            h3{
+                font-size: .8rem;
+                text-align: center;
+                color: #d3cccc;
+                font-weight: 400;
+            }
+        }
+        .about-space{
+            margin-top: 5%;
+            display: grid;
+            place-items: center;
+                
+            .photo{
+                
+                width: 40%;
+                height: 100%;
+            }
+            .about-text{
+                text-align: center;
+                margin-left: 6%;
+                padding-top: 2em;
+                font-size: 1em;
+                color: #111111;
+                p{
+                    font-weight: 500;
+                }
+            }        
+        }
+    }
 }
