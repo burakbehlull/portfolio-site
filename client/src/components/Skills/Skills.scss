@@ -107,6 +107,7 @@
 
     //Mobile
     @media only screen and (max-width: 480px){
+        height: calc(47vh);
         .skills-header{
             padding-top: 15%;
             h1{
@@ -128,8 +129,8 @@
     
             %boxTemplate{
                 font-size: .9em;
-                width: 180px;
-                height: 250px;
+                width: 11.7em;
+                height: 16em;
                 text-align: center;
             }
             .frontend{
@@ -144,7 +145,7 @@
                     display: flex;
                     gap: 10px;
                     padding-top: 30px;
-                    padding-left: 30px;
+                    padding-left: 25px;
     
                     .react{
                         img{
@@ -154,7 +155,7 @@
                     }
                     .scss{
                         img{
-                            width: 61%;
+                            width: 66%;
                         }
                     }
                     
@@ -173,17 +174,17 @@
                     gap: 20px;
                     padding-top: 25px;
                     padding-right: 30px;
-                    padding-left: 40px;
+                    padding-left: 33px;
                     
     
                     .nodejs{
                         img{
-                            width: 84%;
+                            width: 77%;
                          }
                     }
                     .mongodb{
                         img{
-                            width: 60%;
+                            width: 55%;
                         }
                     }
                     
